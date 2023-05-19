@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: gulimall-search
+
+server:
+  port: 12000
+logging:
+  level:
+    com.ljf.gulimall.search: debug
