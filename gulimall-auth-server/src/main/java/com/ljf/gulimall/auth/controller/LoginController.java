@@ -3,10 +3,10 @@ package com.ljf.gulimall.auth.controller;
 import com.alibaba.fastjson.TypeReference;
 import com.ljf.gulimall.auth.vo.UserLoginVo;
 import com.ljf.gulimall.auth.vo.UserRegisterVo;
-import com.xunqi.common.constant.AuthServerConstant;
-import com.xunqi.common.exception.BizCodeEnum;
-import com.xunqi.common.utils.R;
-import com.xunqi.common.vo.MemberResponseVo;
+import com.ljf.common.constant.AuthServerConstant;
+import com.ljf.common.exception.BizCodeEnum;
+import com.ljf.common.utils.R;
+import com.ljf.common.vo.MemberResponseVo;
 import com.ljf.gulimall.auth.feign.MemberFeignService;
 import com.ljf.gulimall.auth.feign.ThirdPartFeignService;
 import org.apache.commons.lang.StringUtils;
@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -29,7 +30,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.xunqi.common.constant.AuthServerConstant.LOGIN_USER;
+import static com.ljf.common.constant.AuthServerConstant.LOGIN_USER;
 
 /**
  * @Description:
@@ -47,7 +48,7 @@ public class LoginController {
     @Autowired
     private MemberFeignService memberFeignService;
 
-    @Autowired
+    @Resource
     private StringRedisTemplate stringRedisTemplate;
 
     @ResponseBody

@@ -13,6 +13,7 @@
         <module name="gulimall-auth-server" />
         <module name="gulimall-order" />
         <module name="gulimall-gateway" />
+        <module name="gulimall-seckill" />
         <module name="gulimall-product" />
         <module name="renren-generator" />
         <module name="gulimall-third-party" />
@@ -40,6 +41,7 @@
       <module name="gulimall-order" options="-parameters" />
       <module name="gulimall-product" options="-parameters" />
       <module name="gulimall-search" options="-parameters" />
+      <module name="gulimall-seckill" options="-parameters" />
       <module name="gulimall-third-party" options="-parameters" />
       <module name="gulimall-ware" options="-parameters" />
       <module name="renren-fast" options="-parameters" />

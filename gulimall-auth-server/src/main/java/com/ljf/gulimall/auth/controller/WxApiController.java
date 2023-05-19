@@ -1,8 +1,8 @@
 package com.ljf.gulimall.auth.controller;
 
 import com.alibaba.fastjson.TypeReference;
-import com.xunqi.common.utils.R;
-import com.xunqi.common.vo.MemberResponseVo;
+import com.ljf.common.utils.R;
+import com.ljf.common.vo.MemberResponseVo;
 import com.ljf.gulimall.auth.feign.MemberFeignService;
 import com.ljf.gulimall.auth.utils.ConstantWxUtils;
 import com.ljf.gulimall.auth.utils.HttpClientUtils;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import static com.xunqi.common.constant.AuthServerConstant.LOGIN_USER;
+import static com.ljf.common.constant.AuthServerConstant.LOGIN_USER;
 
 /**
  * @Description:

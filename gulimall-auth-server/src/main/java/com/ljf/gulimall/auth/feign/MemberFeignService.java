@@ -1,5 +1,6 @@
 package com.ljf.gulimall.auth.feign;
 
+import com.ljf.common.utils.R;
 import com.ljf.gulimall.auth.vo.SocialUser;
 import com.ljf.gulimall.auth.vo.UserLoginVo;
 import com.ljf.gulimall.auth.vo.UserRegisterVo;

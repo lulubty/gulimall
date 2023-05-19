@@ -1,4 +1,4 @@
-package com.ljf.gulimall.auth.config;
+package com.ljf.gulimall.seckill.config;
 
 import com.alibaba.csp.sentinel.adapter.servlet.callback.UrlBlockHandler;
 import com.alibaba.csp.sentinel.adapter.servlet.callback.WebCallbackManager;
@@ -20,9 +20,9 @@ import java.io.IOException;
  **/
 
 @Configuration
-public class GulimallAuthServerSentinelConfig {
+public class GulimallSeckillSentinelConfig {
 
-    public GulimallAuthServerSentinelConfig() {
+    public GulimallSeckillSentinelConfig() {
 
         WebCallbackManager.setUrlBlockHandler(new UrlBlockHandler() {
             @Override

@@ -1,6 +1,6 @@
 package com.ljf.gulimall.auth.feign;
 
-import com.xunqi.common.utils.R;
+import com.ljf.common.utils.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
